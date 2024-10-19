@@ -12,7 +12,7 @@
 const userAuth = (req,res,next)=>{
     console.log("params are")
     console.log(req.params);
-    console.log("queries are")
+    console.log("queries are");
     console.log(req.query);
 
     const token = req.params.token;

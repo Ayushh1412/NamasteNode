@@ -1,4 +1,5 @@
-const db = require('mongoose');
+
+ const db = require('mongoose');
 
 
 const connectDB = async()=> { 

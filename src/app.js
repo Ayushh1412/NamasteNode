@@ -64,6 +64,23 @@ app.use("/admin",(req,res)=>{
     // throw new Error("dummy error");
     res.send("hello adminhvh")
 });
+// app.use("/(ab)+c?",(req,res)=>{
+//     //it will work on abc or ab or abababab...c or abababab.....
+//     res.send("testing route address using + \n it will work on abc or ab or abababab...c or abababab.....")
+// });
+// app.use("/(ab)*c?",(req,res)=>{
+//     //it will work on anything starts from ab and ends with c ab........c
+//     res.send("testing route address using * and  ? \n it will work on anything starts from ab and ends with c ab........c")
+// });
+// app.use(/.*fly$/ ,(req,res)=>{
+//     //it will work on anything that ends with fly
+//     res.send("testing regex \napp.use(/.*fly$/ ,(req,res)=>{}); \nin route address \n it will work on anything that ends with fly")
+// });
+// app.get(/a/,(req,res)=>{
+//     //it will work on anything that includes a  --app.use is not working--
+//     res.send("testing regex \napp.get(/a/,(req,res)=>{}); \nin route address \n  //it will work on anything that includes a")
+// });
+
 
 app.use("/",(err,req,res,next)=>{
 if(err){
